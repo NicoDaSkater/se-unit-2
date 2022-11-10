@@ -2,10 +2,46 @@
 
 ## Essential Questions
 * What is an _object_ and why are they useful?
+
+An object stores multiple pieces of data about an entity, we can save information about one over arching subject or topic. Within this topic we can define different smaller themes/info about the bigger entity calles properties. These properties are data structures themselves as they are able to store all data types, array, other objects, etc. The information stored within these properties or *keys* are called values
+
 * How do we access object properties? When can we use dot notation and when must we use bracket notation?
+
+To access that properties of an object we use bracket notation *and* dot notation. We can always used bracket notation putting the property inside `""`. We *must* use bracket notation if the key is a number, a string beggining with a non-alphanumeric character. Besides these senarios we can use both whenever.
+
 * What data types can be valid object values in JavaScript? What data types can be valid object keys?
+
+Any data type is valid for object values, keys are only valid as string data types.
+
 * What is the relationship between arrays and objects in JavaScript?
+
+##### Both...
+
+* Both objects
+* Both non-primitive (complex) data types
+    * They can hold a multitude of values
+* Both are data structures
+* Both stored in the section of memory called the heap
+* Copy/Passed by reference
+* Both are mutable
+* Use bracket notation to access values
+    *  myArr[index = number]
+    *  myObj[key = string]
+* Both can use methods
+
+ 
+##### Differences are...
+
+* Arrays use indexes to access values. Objects use keys to access values
+* Indexes are integers. Keys are strings.
+* Objects can use dot notation to access values
+* Arrays are used to make ordered lists
+* Objects are used to store related data about an entity
+
 * What does it mean for a property to be _enumerable_?
+
+
+
 * What are the ways that we can iterate over objects?
 * How can we copy the properties from one object to another?
 

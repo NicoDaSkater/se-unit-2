@@ -10,6 +10,22 @@ You're a bouncer at a bar. Given an `age` variable, create a conditional that sa
 
 ```js
 // Your answer goes here.
+const clubBouncer = function(age){
+    const hasID = Math.floor(Math.random() * 2)
+    if (hasID){
+        if (age >= 75){
+            return "Are you sure you want to be here?"
+        } else if (age >=  21){
+            return "Come on in!"
+        } else if (age < 21 && age >= 18){
+            return "Come on in (but no drinking)!"
+        } else {
+            return "You're to young to be in here!"
+        }
+    } else {
+        return "No ID, no entry."
+    }
+}  
 ```
 
 #### Bonus

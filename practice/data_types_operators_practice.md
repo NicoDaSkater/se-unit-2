@@ -16,60 +16,62 @@ What is the output of each of the expressions below?
 
 ```js
 typeof(15)
-// Prediction:
-// Actual:
+// Prediction: Integer
+// Actual: Number
 
 typeof(5.5)
-// Prediction:
-// Actual:
+// Prediction:Number
+// Actual:Number
 
 typeof(NaN)
-// Prediction:
-// Actual:
+// Prediction: String
+// Actual: Number
 
 typeof("hello")
-// Prediction:
-// Actual:
+// Prediction: String
+// Actual: String
 
 typeof(true)
-// Prediction:
-// Actual:
+// Prediction: Boolean
+// Actual: Boolean
 
 typeof(1 != 2)
-// Prediction:
-// Actual:
+// Prediction: Boolean
+// Actual: Boolean
 
 
 "hamburger" + "s"
-// Prediction:
-// Actual:
+// Prediction: "hamburgers"
+// Actual: "hamburgers"
 
 "hamburgers" - "s"
-// Prediction:
-// Actual:
+// Prediction: "hamburger"
+// Actual: NaN
 
 "1" + "3"
-// Prediction:
-// Actual:
+// Prediction: 4
+// Actual:"13"
 
 "1" - "3"
-// Prediction:
-// Actual:
+// Prediction: -2
+// Actual: -2
 
 "johnny" + 5
-// Prediction:
-// Actual:
+// Prediction: "johnny5"
+// Actual: "johnny5"
 
 "johnny" - 5
-// Prediction:
-// Actual:
+// Prediction: NaN
+// Actual: NaN
 
 99 * "luftbaloons"
-// Prediction:
-// Actual:
+// Prediction: NaN
+// Actual: NaN
 ```
 
 What's going on in the second half of the previous question? Are there any "rules" we can pull from those examples?
+
+What's going in the second half of the problems is a js operator behavior called type coercion
 
 ## Booleans & Comparison Operators
 
@@ -88,29 +90,29 @@ Fill out the truth tables below for `&&` (and), `||` (or) and one that uses mult
 
 | a | b | a AND b |
 | --- | --- | --- |
-| true | true | ? |
-| true | false | ? |
-| false | true | ? |
-| false | false | ? |
+| true | true | ? true |
+| true | false | ? false |
+| false | true | ? false |
+| false | false | ? true |
 
 |a|b|a OR b|
 |---|---|---|
-|true|true|?|
-|true|false|?|
-|false|true|?|
-|false|false|?|
+|true|true|? true |
+|true|false|? true |
+|false|true|? true |
+|false|false|? false |
 
 |a|b|a `!=` b|
 |---|---|---|
-|3|3|?|
-|1|5|?|
-|2|"2"|?|
+|3|3|? false |
+|1|5|? true |
+|2|"2"|? false |
 
 |a|b|!a AND (a OR b)|
 |---|---|---|
-|true|true|?|
-|true|false|?|
-|false|true|?|
-|false|false|?|
+|true|true|? false|
+|true|false|? false|
+|false|true|? true|
+|false|false|? false|
 
 <sup>Exercises adapted from [General Assembly](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)</sup>

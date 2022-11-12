@@ -41,7 +41,17 @@ Bar patrons must have an ID if the bouncer is even going to consider what age th
 Your task is to create a loop that prints out all the odd numbers between 1 and 100...twice! Your solution must use one `for` loop and one `while` loop.
 
 ```js
-// Your answer goes here.
+const oddNumsTwice = function (){
+    let number = 1
+    while (number <= 100) {
+        if (number % 2 !== 0 ){
+            for (let counter = 0; counter < 2; counter++){
+            console.log(number)
+            }
+        }
+        number++
+    }   
+}
 ```
 
 #### Bonus
